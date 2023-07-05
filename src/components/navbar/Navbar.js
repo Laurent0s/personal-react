@@ -1,6 +1,9 @@
 import sun from "./../../img/icons/sun.svg";
 import moon from "./../../img/icons/moon.svg";
 
+import Home from "./../../pages/Home";
+import Skills from "./../../pages/Skills";
+
 import "./style.css";
 
 const Navbar = () => {
