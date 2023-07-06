@@ -1,12 +1,5 @@
 import Header from "../components/header/header";
 
-import primg1 from "./../img/projects/01.jpg";
-import primg2 from "./../img/projects/02.jpg";
-import primg3 from "./../img/projects/03.jpg";
-import primg4 from "./../img/projects/04.jpg";
-import primg5 from "./../img/projects/05.jpg";
-import primg6 from "./../img/projects/06.jpg";
-
 const Contacts = () => {
     return ( 
     <>

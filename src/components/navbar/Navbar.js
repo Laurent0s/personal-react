@@ -1,8 +1,7 @@
 import sun from "./../../img/icons/sun.svg";
 import moon from "./../../img/icons/moon.svg";
 
-import Home from "./../../pages/Home";
-import Skills from "./../../pages/Skills";
+import { NavLink } from "react-router-dom";
 
 import "./style.css";
 
@@ -11,7 +10,10 @@ const Navbar = () => {
     <nav className="nav">
         <div className="container">
             <div className="nav-row">
-                <a href="./index.html" className="logo"><strong>Portfolio</strong></a>
+                <NavLink to="/" className="logo">
+                    <strong>Portfolio</strong>
+                </NavLink>
+                
 
                 <button className="dark-mode-btn">
                     <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
@@ -19,10 +21,24 @@ const Navbar = () => {
                 </button>
 
                 <ul className="nav-list">
-                    <li className="nav-list__item"><a href="./index.html"
-                            className="nav-list__link nav-list__link--active">Projects</a></li>
-                    <li className="nav-list__item"><a href="./skills.html" className="nav-list__link">Skills</a></li>
-                    <li className="nav-list__item"><a href="./contacts.html" className="nav-list__link">Contacts</a></li>
+                    
+                    <li className="nav-list__item">
+                        <NavLink to="/" className="nav-list__link">
+                            Projects
+                        </NavLink >
+                    </li>
+                    <li className="nav-list__item">
+                        <NavLink to="/skills" className="nav-list__link">
+                            Skills
+                        </NavLink >
+                    </li>
+                    <li className="nav-list__item">
+                        <NavLink to="/contacts" className="nav-list__link">
+                            Contacts
+                        </NavLink >
+                    </li>
+
+            
 
                 </ul>
             </div>
